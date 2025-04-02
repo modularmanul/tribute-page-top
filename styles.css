@@ -109,11 +109,11 @@ a:hover {
 
 /* Introduction Section */
 #introduction-section,
-#curriculum-overview,
-#key-features {
+#curriculum-overview-section,
+#key-features-section {
   width: 100%;
   margin: 2em 0;
-  padding: 1.2em;
+  padding: 2em 1.5em;
 }
 
 #introduction-details {
@@ -150,7 +150,7 @@ a:hover {
 }
 
 #curriculum-overview-section,
-#key-features {
+#key-features-section {
   box-shadow: 0 0 15px 2px #e0dfdf;
 }
 
