@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+  margin: 3em auto;
+  min-width: 300px;
+  max-width: min(1200px, 80%);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Limelight', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 1.2em;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.section-description {
+  margin: 1.5em;
+}
+
+/* Eyecatch Section */
+#eyecatch-section {
+  margin-block: -20px;
+}
+
+#eyecatch-heading {
+  margin-inline: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#eyecatch-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#eyecatch-image-caption {
+  width: 75%;
+  background-color: #e0dfdf;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#quote {
+  text-align: justify;
+}
+
+#quote p:nth-child(1) {
+  text-indent: 1.5em;
+  margin: 0 2em;
+}
+
+#quote p:nth-child(1)::before {
+  font-size: 2em;
+  font-weight: bold;
+  content: '\201C';
+  color: #8b4513;
+}
+
+#quote p:nth-child(1)::after {
+  font-size: 2em;
+  font-weight: bold;
+  content: '\201D';
+  color: #8b4513;
+}
+
+em {
+  color: #8b4513;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+/* Introduction Section */
+#introduction-section,
+#curriculum-overview,
+#key-features {
+  width: 100%;
+  margin: 2em 0;
+  padding: 1.2em;
+}
+
+#introduction-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+#introduction-details-list dd {
+  margin-bottom: 1.5em;
+  max-width: 35ch;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+}
+
+#introduction-details-summary {
+  width: 50%;
+  float: right;
+}
+
+/* Curriculum Overview Section */
+#curriculum-overview-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#introduction-details,
+.curriculum-path {
+  margin: 0 1.5em;
+}
+
+.curriculum-path-title {
+  border-bottom: 2px solid #8b4513;
+}
+
+#curriculum-overview-section,
+#key-features {
+  box-shadow: 0 0 15px 2px #e0dfdf;
+}
+
+/* Key Features Section */
+#key-features-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.key-features-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 10px;
+  text-align: center;
+  border-radius: 1.5em;
+  gap: 1.5em;
+  word-break: break-word;
+}
+
+.key-features-title {
+  color: #8b4513;
+  height: 20px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 4em;
+  text-align: center;
+}
